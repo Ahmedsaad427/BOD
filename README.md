@@ -94,9 +94,85 @@ The application includes a mock authentication system for demonstration purposes
 - `GET /comments` - Fetch all comments
 
 ### Simulated CRUD Operations
-- **Create Post** - Simulated with local state management
-- **Update Post** - Simulated with local state management
-- **Delete Post** - Simulated with local state management
+# Admin Dashboard
+
+A modern, responsive admin dashboard built with React, Tailwind CSS, and Context API for state management. This dashboard provides a clean interface for managing posts, users, and comments with dark/light mode support.
+
+## 🚀 Features
+
+- **User Authentication** - Login and session management
+- **Dark/Light Mode** - Toggle between themes
+- **Responsive Design** - Works on desktop and mobile devices
+- **Posts Management** - Create, read, update, and delete posts
+- **User Management** - View and manage user accounts
+- **Comments** - View and manage post comments
+- **Analytics** - Data visualization and insights
+
+## 🛠️ Setup Instructions
+
+### Prerequisites
+- Node.js (v14 or later)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ahmedsaad427/BOD.git
+   cd BOD
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## 📂 Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── context/       # Context providers
+├── pages/         # Page components
+├── styles/        # Global styles
+└── utils/         # Utility functions
+```
+
+## 🌐 API Endpoints
+
+### Authentication
+- `POST /api/auth/login` - User login
+- `POST /api/auth/register` - User registration
+- `GET /api/auth/me` - Get current user info
+
+### Posts
+- `GET /api/posts` - Get all posts
+- `GET /api/posts/:id` - Get single post
+- `POST /api/posts` - Create new post
+- `PUT /api/posts/:id` - Update post
+- `DELETE /api/posts/:id` - Delete post
+
+### Users
+- `GET /api/users` - Get all users
+- `GET /api/users/:id` - Get single user
+- `PUT /api/users/:id` - Update user
+- `DELETE /api/users/:id` - Delete user
+
+### Comments
+- `GET /api/comments` - Get all comments
+- `POST /api/comments` - Create new comment
+- `DELETE /api/comments/:id` - Delete comment
 
 ## 🎨 UI Components
 
@@ -114,6 +190,10 @@ The application includes a mock authentication system for demonstration purposes
 - **Header** - Top navigation with search and user menu
 - **Layout** - Main application layout wrapper
 - **Dashboard** - Main dashboard with stats and data overview
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🔧 State Management
 
